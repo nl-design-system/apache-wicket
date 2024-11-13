@@ -4,6 +4,8 @@ import org.apache.wicket.markup.html.basic.Label;
 // import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.model.Model;
 
+import nl.utrecht.components.UtrechtActionGroup;
+import nl.utrecht.components.UtrechtCheckbox;
 import nl.utrecht.components.UtrechtCode;
 import nl.utrecht.components.UtrechtCodeBlock;
 import nl.utrecht.components.UtrechtHeading;
@@ -40,6 +42,16 @@ public class Components extends EmptyPage
         add( new UtrechtHeading4( "heading-4-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading5( "heading-5-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading6( "heading-6-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
+
+        add( new UtrechtActionGroup( "action-group-example"));
+
+        add( new UtrechtCheckbox( "form-field-checkbox-example", Model.of(false), "I agree"));
+        add( new UtrechtCheckbox( "form-field-checkbox-checked-example", Model.of(true), "I agree"));
+        add( new UtrechtCheckbox( "form-field-checkbox-invalid-example", Model.of(false), "I agree"));
+        UtrechtCheckbox requiredCheckbox = new UtrechtCheckbox( "form-field-checkbox-required-example", Model.of(false), "I agree");
+        requiredCheckbox.setRequired(true);
+        add( requiredCheckbox );
+        add( new UtrechtCheckbox( "form-field-checkbox-description-example", Model.of(false), Model.of("I agree"), Model.of("Description"), Model.of("error")));
 
     }
 }
