@@ -7,9 +7,15 @@ WORKDIR /app
 
 RUN mkdir -p src/main/resources src/main/java src/main/webapp/login
 
+# Install the dependencies of our "stable" `pom.xml` file (`pom-offline.xml`).
+# This way we can change our development version of the `pom.xml`,
+# without having to wait for downloading of all dependencies each and every change.
+
 COPY pom-offline.xml pom.xml
 
 RUN mvn dependency:go-offline
+
+# By this point our dependencies have been cached, add our development `pom.xml`.
 
 COPY pom.xml .
 
@@ -21,7 +27,7 @@ RUN mvn --offline install
 COPY src ./src
 
 # Download dependencies and build the application
-RUN mvn --offline package -DskipTests
+RUN mvn --offline clean package -DskipTests
 
 FROM tomcat:10-jdk17
 
