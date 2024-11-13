@@ -28,19 +28,18 @@ public class Components extends EmptyPage
         add( new UtrechtCodeBlock( "code-block-example", Model.of("Reload Page")));
 
         add( new UtrechtHeading( "heading-level-1-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_1));
-        add( new UtrechtHeading( "heading-level-2-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_2));
-        add( new UtrechtHeading( "heading-level-3-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_3));
-        add( new UtrechtHeading( "heading-level-4-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_4));
-        add( new UtrechtHeading( "heading-level-5-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_5));
-        add( new UtrechtHeading( "heading-level-6-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_6));
+        // add( new UtrechtHeading( "heading-level-2-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_2));
+        // add( new UtrechtHeading( "heading-level-3-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_3));
+        // add( new UtrechtHeading( "heading-level-4-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_4));
+        // add( new UtrechtHeading( "heading-level-5-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_5));
+        // add( new UtrechtHeading( "heading-level-6-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx"), UtrechtHeading.HeadingLevel.LEVEL_6));
+
         add( new UtrechtHeading1( "heading-1-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading2( "heading-2-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading3( "heading-3-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading4( "heading-4-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading5( "heading-5-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
         add( new UtrechtHeading6( "heading-6-example", Model.of("Op brute wĳze ving de schooljuf de quasi-kalme lynx")));
-
-        // add(new UtrechtUnorderedList("body"));
 
     }
 }
